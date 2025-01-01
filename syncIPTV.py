@@ -41,7 +41,7 @@ def download_and_save(link_dict, base_save_directory):
             # 处理文件内容
             content = response.text
 
-            # 替换第一行内容为 '12345'
+            # 替换第一行内容为 {headStr}
             lines = content.splitlines()
             if lines:
                 lines[0] = headStr
